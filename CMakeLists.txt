@@ -1,5 +1,6 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.8.0)
 project(bkmaxflow)
 
-add_library(bkmaxflow SHARED bk.cpp graph.cpp maxflow.cpp)
-target_compile_options(bkmaxflow PRIVATE -std=c++14)
+add_library(bkmaxflow SHARED bk.cpp)
+set_target_properties(bkmaxflow PROPERTIES CXX_STANDARD 14)
+target_compile_features(bkmaxflow PUBLIC cxx_std_14)

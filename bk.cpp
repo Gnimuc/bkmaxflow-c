@@ -1,7 +1,9 @@
 #include "bk.h"
-#include "graph.h"
+#include "graph.cpp"
+#include "maxflow.cpp"
 #include <stdexcept>
 #include <string>
+#include <memory>
 
 extern "C" {
 

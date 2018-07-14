@@ -20,6 +20,11 @@ bkmaxflow-c |
 ```
 
 ### Build
+Comment the last line of `maxflow.cpp` firstly:
+```c
+// #include "instances.inc"
+```
+then
 ```shell
 mkdir build && cd build
 cmake ..

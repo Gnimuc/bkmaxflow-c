@@ -9,3 +9,5 @@ install(TARGETS bkmaxflow
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib/static)
+
+install(FILES bk.h DESTINATION include)
